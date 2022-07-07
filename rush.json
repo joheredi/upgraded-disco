@@ -473,5 +473,17 @@
     //   "reviewCategory": "tools",
     //   "tags": ["tools"]
     // }
+    {
+      "packageName": "@azure-tools/rlc-codegen",
+      "projectFolder": "lib/rlc-codegen"
+    },
+    {
+      "packageName": "@cadl-lang/ts-rlc",
+      "projectFolder": "lib/cadl-rlc-emitter"
+    },
+    {
+      "packageName": "@msinternal/cadl-rest-test",
+      "projectFolder": "cadl-test/rest"
+    }
   ]
 }
