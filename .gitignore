@@ -66,3 +66,7 @@ common/autoinstallers/*/.npmrc
 
 # Heft
 .heft
+
+cadl-output
+lib/**/cadl-output
+lib/**/dist
