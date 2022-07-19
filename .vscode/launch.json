@@ -5,6 +5,21 @@
     "version": "0.2.0",
     "configurations": [
       {
+        "name": "Generate code for Rest Folder",
+        "request": "launch",
+        "cwd": "${workspaceFolder}/cadl-test/rest",
+        "runtimeArgs": ["cadl", "compile", "./spec"],
+        "runtimeExecutable": "npx",
+        "skipFiles": ["<node_internals>/**"],
+        "type": "pwa-node",
+        "outFiles": [
+          "${workspaceFolder}/packages/*/dist/**/*.js",
+          "${workspaceFolder}/packages/*/dist-dev/**/*.js",
+          "${workspaceFolder}/core/packages/*/dist/**/*.js",
+          "${workspaceFolder}/core/packages/*/dist-dev/**/*.js"
+        ]
+      },
+      {
         "name": "Generate code for FluidRelay",
         "request": "launch",
         "cwd": "${workspaceFolder}/packages/cadl-samples",
