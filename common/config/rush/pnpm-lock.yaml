@@ -7,12 +7,12 @@ importers:
 
   ../../cadl-test/rest:
     specifiers:
-      '@cadl-lang/compiler': ~0.32.0
-      '@cadl-lang/rest': ~0.15.0
+      '@cadl-lang/compiler': latest
+      '@cadl-lang/rest': latest
       '@cadl-lang/ts-rlc': workspace:*
     dependencies:
-      '@cadl-lang/compiler': 0.32.0
-      '@cadl-lang/rest': 0.15.0_@cadl-lang+compiler@0.32.0
+      '@cadl-lang/compiler': 0.33.0
+      '@cadl-lang/rest': 0.15.1_@cadl-lang+compiler@0.33.0
       '@cadl-lang/ts-rlc': link:../../lib/cadl-rlc-emitter
 
   ../../lib/cadl-rlc-emitter:
@@ -36,8 +36,8 @@ importers:
       typescript: ^4.6.3
     dependencies:
       '@azure-tools/rlc-codegen': link:../rlc-codegen
-      '@cadl-lang/compiler': 0.32.0
-      '@cadl-lang/rest': 0.15.0_@cadl-lang+compiler@0.32.0
+      '@cadl-lang/compiler': 0.33.0
+      '@cadl-lang/rest': 0.15.1_@cadl-lang+compiler@0.33.0
       prettier: 2.7.1
       tslib: 2.3.1
     devDependencies:
@@ -88,8 +88,8 @@ packages:
       js-tokens: 4.0.0
     dev: false
 
-  /@cadl-lang/compiler/0.32.0:
-    resolution: {integrity: sha512-SjfXLjTIZE3DehNquJcKHSDeSPF0avV0tZpusdqqcCZscEFglGHFS3igqsXEOkbsv6ACwYz8Fm6/y94qU77t4Q==}
+  /@cadl-lang/compiler/0.33.0:
+    resolution: {integrity: sha512-emylkgPuD1nPEUwtsdRV5F/WQvqPU2UYGTpWXocqP5FuJfmiTZBRvPvJ9Ftkg/rYJ9EKgf45IIXyGRza7bRyFA==}
     engines: {node: '>=16.0.0'}
     hasBin: true
     dependencies:
@@ -103,20 +103,20 @@ packages:
       node-fetch: 3.2.6
       node-watch: 0.7.3
       picocolors: 1.0.0
-      prettier: 2.6.2
+      prettier: 2.7.1
       prompts: 2.4.2
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.5
       yargs: 17.3.1
     dev: false
 
-  /@cadl-lang/rest/0.15.0_@cadl-lang+compiler@0.32.0:
-    resolution: {integrity: sha512-rO1yEXZ9cWr3FtAQbA/DLWslUjUYkOAkei9ZJxcHHmzqJnAI5fylFB23LaAJhVA6a8lAHis30CtJj8sY/KXQAg==}
+  /@cadl-lang/rest/0.15.1_@cadl-lang+compiler@0.33.0:
+    resolution: {integrity: sha512-J7gaLFri1huDzUPmndvg7JTJZ8dnQ9csl1PafGbvypjga5Ct9+YZcAInErMKFgnxJJ5NVnDz5auD3579eOCYWg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
-      '@cadl-lang/compiler': ~0.32.0
+      '@cadl-lang/compiler': ~0.33.0
     dependencies:
-      '@cadl-lang/compiler': 0.32.0
+      '@cadl-lang/compiler': 0.33.0
     dev: false
 
   /@cspotcode/source-map-support/0.8.1:
@@ -1403,12 +1403,6 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
     dev: true
-
-  /prettier/2.6.2:
-    resolution: {integrity: sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==}
-    engines: {node: '>=10.13.0'}
-    hasBin: true
-    dev: false
 
   /prettier/2.7.1:
     resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}

@@ -2,9 +2,9 @@
   "name": "@msinternal/cadl-rest-test",
   "version": "1.0.0",
   "dependencies": {
-    "@cadl-lang/compiler": "~0.32.0",
+    "@cadl-lang/compiler": "latest",
     "@cadl-lang/ts-rlc": "workspace:*",
-    "@cadl-lang/rest": "~0.15.0"
+    "@cadl-lang/rest": "latest"
   },
   "scripts": {
     "cadl:compile": "cadl compile ./spec",
